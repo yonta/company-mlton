@@ -187,13 +187,16 @@ Otherwise, return 'nil."
     "signature" "struct" "structure" "where")
   "The list of Standard ML keywords for the modules language.")
 (defconst company-mlton-keyword--sml-keywords-smlsharp
-  '("all" "asc" "begin" "by" "commit" "default" "delete" "desc"
-    "distinct" "from" "insert" "into" "order" "rollback" "select"
-    "update" "use" "values"
-    "_NULL" "_attribute" "_builtin" "_ffiapply" "_foreach"
-    "_import" "_interface" "_join" "_json" "_jsoncase" "_polyrec"
-    "_require" "_sizeof" "_sql" "_sqleval" "_sqlexec" "_sqlserver"
-    "_typeof" "_use")
+  '("__attribute__" "_builtin" "_dynamic" "_dynamiccase"
+    "_dynamicnull" "_dynamicvoid" "_extend" "_foreach" "_import"
+    "_interface" "_join" "_polyrec" "_reifyTy" "_require" "_sizeof"
+    "_sql" "_sqleval" "_sqlexec" "_sqlserver" "_update" "_use"
+    "all" "asc" "begin" "by" "commit" "cross" "default" "delete"
+    "desc" "distinct" "do" "exists" "false" "fetch" "first" "from"
+    "group" "having" "inner" "insert" "into" "is" "join" "limit"
+    "natural" "next" "not" "null" "offset" "on" "only" "or" "order"
+    "rollback" "row" "rows" "select" "set" "true" "unknown"
+    "update" "use" "values")
   "The list of SML# keywords.")
 (defconst company-mlton-keyword--sml-keywords
   (sort (append company-mlton-keyword--sml-keywords-core
